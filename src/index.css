@@ -1,0 +1,339 @@
+:root {
+  --red: #eb5757;
+  --border-color: #f2f2f2;
+}
+
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* nav */
+.nav {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav picture img {
+  width: 130px;
+  padding: 1rem;
+}
+
+.barra_nav {
+  display: flex;
+  gap: 0.5rem;
+  text-align: center;
+  justify-content: space-between;
+  border-radius: 1rem;
+  border: 2px solid;
+  border-color: var(--border-color);
+  width: 300px;
+  margin: 1rem;
+  box-shadow: 1px 3px 4px #aaaaaa;
+  justify-content: center;
+  margin: 0.7rem 25%;
+  border: none; 
+  background: none; 
+  padding: 0; 
+  cursor: pointer;
+}
+
+.barra_nav h3 {
+  font-size: 15px;
+  padding-left: 0.5rem;
+}
+
+.barra_nav span {
+  border: none;
+  border-left: 2px solid;
+  border-right: 2px solid;
+  border-color: var(--border-color);
+  text-align: center;
+  padding: 0.9rem 0 ;
+  font-size: 15px;
+  width: 115px;
+  color: #aaaaaa;
+}
+
+.barra_nav img {
+  padding-right: 0.5rem;
+  padding: 0.9rem 0 ;
+}
+/* nav */
+
+
+/* cards independientes */
+h1 {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  padding: 0 1rem;
+}
+.card {
+  margin-top: 2rem;
+  width: 400px;
+}
+
+.card picture img{
+  width: 100%;
+  height: 270px;
+  border-radius: 1rem;
+}
+
+.estrellita {
+  font-size: 18px;
+  color: #eb5757;
+  margin: 0;
+}
+
+.superhost {
+  border-radius: 2rem;
+  border: 2px black solid;
+  padding: 0.2rem 1rem;
+  width: 96px;
+  font-size: 16px;
+}
+
+.detalles {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  align-items: center;
+  font-size: 16px;
+}
+
+.detalles > h4 {
+  font-weight: 300;
+}
+
+.titulo_card {
+  margin-top: 0;
+  font-size: 18px;
+}
+/* cards independientes */
+
+/* lista de cartas */
+.list_cards {
+  padding: 0 1rem;
+  margin-top: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 400px);
+  gap: 2rem;
+}
+/* lista de cartas */
+
+/* modal principal */
+.modal_main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  color: black;
+  text-align: center;
+  padding: 15px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1001; /* encima de todo */
+  font-size: 18px;
+
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+.opacidad {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.534);
+  z-index: 1000; /* debajo del modal, pero encima del contenido */
+}
+
+.modal_bar {
+  grid-column: 1/2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6rem;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.close-modal {
+  font-size: 30px;
+  font-weight: bolder;
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 3rem;
+  cursor: pointer;
+  background-color: #fff;
+  width: 40px;
+}
+
+/* botones location y guests */
+.location_div {
+  width: 40%;
+}
+
+.location_div button{
+  text-align: left;
+  padding: 0 2rem;
+  border: solid var(--border-color) 2px;
+  font-size: 9px;
+  width: 100%;
+  border-radius: 1.5rem;
+  background-color: #fff;
+}
+
+.guests_div {
+  width: 40%;
+}
+
+.guests_div > button:first-of-type{
+  text-align: left;
+  border: solid var(--border-color) 2px;
+  padding: 0 2rem;
+  font-size: 9px;
+  width: 100%;
+  border-radius: 1.5rem; 
+  background-color: #fff;
+}
+
+.guests_div h2 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* botones location y guests */
+.search-container {
+  width: 20%;
+}
+.search {
+  background-color: #eb5757;
+  border: none;
+  border-radius: 1rem;
+  color: #FFFFFF;
+  /* display: flex; */
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  width: 60%;
+}
+
+.search img {
+  height: 20px;
+  width: 20px;
+  padding: 0.1rem 0;
+  padding-right: 0.5rem;
+}
+.search span {
+  font-size: 18px;
+}
+
+.modal_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* botones ciudades */
+.container_cities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.container_cities > button {
+  border: none;
+  border-radius: 1rem;
+  background-color: #FFFFFF;
+  padding: 1rem;
+  cursor: pointer;
+  display: flex;
+  font-size: 15px;
+}
+
+.container_cities button:last-of-type{
+  font-size: 25px;
+}
+
+.container_cities > button img {
+  width: 14px;
+  height: 20px;
+}
+/* botones ciudades */
+
+
+/* contador de guests */
+.container_contador {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+}
+
+.contadores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contadores h4 {
+  padding: 0 1rem;
+}
+
+.contadores button {
+  font-size: 15px;
+  width: 20px;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: solid 2px var(--border-color);
+  background-color: #fff;
+  padding: 0;
+  padding-left: 0.5rem;
+  padding-right: 1.3rem;
+  margin: 0;
+}
+
+/* contador de guests */
+
+.flecha-cerrar {
+  color: #eb5757;
+  border: none;
+  background-color: #fff;
+  font-size: 25px;
+}
+
+
+@media only screen and (max-width: 950px){
+  .modal_bar{
+    display: block;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .barra_nav {
+    margin: 0 15%;
+  }
+
+  .location_div {
+    width: 100%;
+  }
+
+  .guests_div {
+    width: 100%;
+  }
+
+  .search-container {
+    margin-top: 2rem;
+    width: 100%;
+  }
+}
